@@ -1,0 +1,240 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');*/
+
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+/* start of hero page*/
+
+.heropage{
+    background: url(./pics/orange\ pic.jpg);
+    background-position: 30% 70%; 
+    background-size: cover; 
+    height: 80vh;  
+    color: white;
+    padding-bottom: 4em;
+    
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.heropage a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: left;
+    padding: 0em 0em 4em 1em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.heropage nav{
+    text-align: right;
+    margin-right: 1rem;
+    
+}
+#headbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.top-sect {
+    margin: 4em 0em 0em 1em;
+    padding-right: 7em;
+    padding-top: 3rem;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-weight: bolder;
+}
+
+h1 span{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2rem;
+    display: block;
+}
+
+.heropage p{
+   margin: 0em 1em 2em 0em;
+   font-weight: normal;
+   font-size: 1em;
+}
+
+.heropage button{
+    color: white;
+    background-color: rgba(0, 140, 255, 0.911);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.heropage button a{
+    color: white;
+    background-color: rgba(0, 140, 255, 0.911);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.heropage button:hover{
+    color: white;
+    background-color: rgba(3, 117, 211, 0.911);
+    
+}
+
+/* end of hero page*/
+/* start of article 1*/
+
+.article{
+    margin: 0.1em 0em;
+    text-align: center;
+}
+
+.article p{
+    padding: 0rem 3rem 1rem 3rem;
+    text-align: center;
+    line-height: 2em;
+}
+
+.article h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0rem 1rem 0rem;
+}
+/* end of article 1*/
+/* start of article 2*/
+.content2{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    padding: 2em 1em;
+    margin-top: 0em;
+
+}  
+
+.content2 h2{
+    text-transform: uppercase;
+    padding: 2rem 0rem 1rem 0rem;
+}
+
+.content2 p{
+    padding: 0rem 3rem 1rem 3rem;
+    line-height: 2em;
+}
+/* end of article 2*/
+/* start of form*/
+#form-case1{
+   /* margin: 0em 2em 0em 2em;*/
+    background: url(./pics/lunch.jpg);
+    background-size: cover;
+    padding: 2em;
+}
+.article label{
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0,0,0,.3);
+}
+
+input[type=text]{
+    padding: 1em;
+        width: 100%;
+        border-radius: 1em;
+        border: none;
+        box-sizing: border-box;
+        opacity: calc(0.7);
+}
+
+#form-case1 p{
+    margin-top: 0rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+}
+
+#form-button{
+    padding: 1em;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 140, 255, 0.911);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-button:hover{
+    color: white;
+    background-color: rgba(3, 117, 211, 0.911);
+}
+/* end of form*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query*/
+
+@media (min-width: 1024px) {
+    .article{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "content form";
+    }
+
+    .content1{
+        grid-area: content;
+    }
+    #form-case1{
+        grid-area: form;
+    }
+    .content2 p{
+        text-align: center;
+        padding: 0em 25%;padding: 0em 25%;
+        box-sizing: border-box;
+    }  
+}
+
+/*keyframes*/
+
+.top-sect{
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+
+
+
+
+
+
+
